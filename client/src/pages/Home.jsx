@@ -37,9 +37,9 @@ export const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="text-3xl sm:text-4xl md:text-5xl mt-5 md:mt-0 lg:text-6xl font-bold"
           >
-            <span className="text-primary bg-gradient-to-r from-blue-100 to-blue-400 bg-clip-text text-transparent">
+            <span className="text-primary bg-gradient-to-r  from-blue-100 to-blue-400 bg-clip-text text-transparent ">
               Hi, I'm Sahil Singh
             </span>
           </motion.h1>
@@ -132,7 +132,7 @@ export const Home = () => {
           </div>
           <Scene3D /> */}
 
-          <div style={{ position: "relative", width: "100%", height: "500px" }}>
+          <div style={{ position: "relative", width: "100%", height: "500px" }} className='hidden lg:block' >
           
 
             {/* Overlayed Spline 3D */}
@@ -144,8 +144,8 @@ export const Home = () => {
               height: "100%",
               zIndex: 1,
              
-            }}>
-              <Spline scene="https://prod.spline.design/jVknhhU9J3KznhcL/scene.splinecode" />
+            }} className='hidden lg:block' >
+              <Spline scene="https://prod.spline.design/jVknhhU9J3KznhcL/scene.splinecode" className='hidden lg:block' />
             </div>
           </div>
           {/* <RobotFace/> */}
